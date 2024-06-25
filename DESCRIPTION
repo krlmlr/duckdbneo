@@ -1,6 +1,6 @@
 Package: duckdbneo
-Title: DBI Package for the DuckDB Database Management System
-Version: 0.9.2
+Title: New Bindings for the DuckDB Database Management System
+Version: 0.0.1
 Authors@R: c(
     person("Hannes", "Mühleisen", , "hannes@cwi.nl", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-8552-0029")),
@@ -10,11 +10,10 @@ Authors@R: c(
   )
 Description: The DuckDB project is an embedded analytical data management
     system with support for the Structured Query Language (SQL). This
-    package includes all of DuckDB and a R Database Interface (DBI)
-    connector.
+    package includes C and ADBC bindings to duckdb.
 License: MIT + file LICENSE
-URL: https://duckdb.org/, https://github.com/duckdb/duckdb-r
-BugReports: https://github.com/duckdb/duckdb-r/issues
+URL: https://duckdb.org/, https://github.com/duckdblabs/duckdbneo
+BugReports: https://github.com/duckdblabs/duckdbneo/issues
 Depends:
     R (>= 4.0.0)
 Encoding: UTF-8
