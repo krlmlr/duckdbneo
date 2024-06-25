@@ -4,16 +4,16 @@
 \name{duckdbneo-package}
 \alias{duckdbneo}
 \alias{duckdbneo-package}
-\title{duckdbneo: DBI Package for the DuckDB Database Management System}
+\title{duckdbneo: New Bindings for the DuckDB Database Management System}
 \description{
-The DuckDB project is an embedded analytical data management system with support for the Structured Query Language (SQL). This package includes all of DuckDB and a R Database Interface (DBI) connector.
+The DuckDB project is an embedded analytical data management system with support for the Structured Query Language (SQL). This package includes C and ADBC bindings to duckdb.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://duckdb.org/}
-  \item \url{https://github.com/duckdb/duckdb-r}
-  \item Report bugs at \url{https://github.com/duckdb/duckdb-r/issues}
+  \item \url{https://github.com/duckdblabs/duckdbneo}
+  \item Report bugs at \url{https://github.com/duckdblabs/duckdbneo/issues}
 }
 
 }
