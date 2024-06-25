@@ -1,2 +1,3 @@
 ^duckdbneo\.Rproj$
 ^\.Rproj\.user$
+^generate-wrapper\.py$
