@@ -41,8 +41,7 @@ public:
 	}
 };
 
-class ValueConversion {
-public:
+namespace ValueConversion {
 	template <class DUCKDB_NATIVE_TYPE>
 	static SEXP ToR(DUCKDB_NATIVE_TYPE val) {
 		//static_assert(false, "Unimplemented value conversion to R");
@@ -76,7 +75,7 @@ public:
 	}
 
 	template <>
-SEXP ToR(duckdb_logical_type val) {
+	SEXP ToR(duckdb_logical_type val) {
 		// TOOD reduce code replication here
 		auto res = PointerWrapper<duckdb_vector , "duckdb_logical_type">::Allocate();
 		*(duckdb_logical_type*)R_ExternalPtrAddr(res) = val;
@@ -92,7 +91,7 @@ SEXP ToR(duckdb_logical_type val) {
 	}
 
 	template <>
-SEXP ToR(void *val) {
+	SEXP ToR(void *val) {
 		auto res = PointerWrapper<void* , "duckdb_void_ptr">::Allocate();
 		R_SetExternalPtrAddr(res, val);
 		return res;
@@ -239,5 +238,5 @@ SEXP ToR(void *val) {
 	}
 
 
-};
-} // namespace duckdb_node
+} // namespace ValueConversion
+} // namespace duckdb_r

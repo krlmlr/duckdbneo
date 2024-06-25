@@ -2,6 +2,8 @@
 #include "Rdefines.h"
 #include <dlfcn.h>
 
+#include <cstdint>
+
 
 #ifdef _WIN32
 
