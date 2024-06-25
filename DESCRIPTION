@@ -23,5 +23,7 @@ Imports:
     duckdb
 Suggests: 
     adbcdrivermanager,
+    adbi,
+    DBItest,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
