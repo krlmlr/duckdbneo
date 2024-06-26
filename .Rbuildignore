@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^generate-wrapper\.py$
 ^\.github$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
