@@ -35,7 +35,7 @@ public:
 
 	static SEXP Wrap( void* ptr) {
 		// TODO cache this string?
-		auto ptr_sexp = R_MakeExternalPtr(ptr, Rf_ScalarString(mkChar(NAME.value)), R_NilValue);
+		auto ptr_sexp = R_MakeExternalPtr(ptr, Rf_ScalarString(Rf_mkChar(NAME.value)), R_NilValue);
 		R_RegisterCFinalizerEx(ptr_sexp, Finalize, Rboolean::FALSE);
 		return ptr_sexp;
 	}
@@ -51,7 +51,7 @@ namespace ValueConversion {
 
 	template <>
 	SEXP ToR(const char* val) {
-		return Rf_ScalarString(mkChar(val));
+		return Rf_ScalarString(Rf_mkChar(val));
 	}
 
 	template <>
@@ -100,12 +100,12 @@ namespace ValueConversion {
 
 	template <>
 	SEXP ToR(duckdb_state val) {
-		return ScalarInteger(val);
+		return Rf_ScalarInteger(val);
 	}
 
 	template <>
 	SEXP ToR(duckdb_type val) {
-		return ScalarInteger(val);
+		return Rf_ScalarInteger(val);
 	}
 
 
