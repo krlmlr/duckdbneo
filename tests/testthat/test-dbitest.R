@@ -1,6 +1,6 @@
 skip_on_cran()
 
-if (rlang::is_installed("DBItest")) {
+if (rlang::is_installed(c("DBItest", "adbi", "arrow"))) {
   DBItest::test_all(c(
     # Also in adbcsqlite
 

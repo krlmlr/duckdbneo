@@ -2,7 +2,7 @@
 # Then, use DBItest::test_some() to see the DBI calls emitted by the tests
 #
 # This call must stay here, otherwise DBItest::test_some() doesn't work
-if (rlang::is_installed(c("DBItest", "adbi"))) {
+if (rlang::is_installed(c("DBItest", "adbi", "arrow"))) {
   adbc_driver <- adbcdrivermanager::adbc_driver(.Call(duckdb_adbc))
   drv <- adbi::adbi(adbc_driver)
 
