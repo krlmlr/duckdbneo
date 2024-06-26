@@ -12,8 +12,8 @@ The DuckDB project is an embedded analytical data management system with support
 Useful links:
 \itemize{
   \item \url{https://duckdb.org/}
-  \item \url{https://github.com/duckdblabs/duckdbneo}
-  \item Report bugs at \url{https://github.com/duckdblabs/duckdbneo/issues}
+  \item \url{https://github.com/krlmlr/duckdbneo}
+  \item Report bugs at \url{https://github.com/krlmlr/duckdbneo/issues}
 }
 
 }

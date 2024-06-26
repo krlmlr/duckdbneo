@@ -12,8 +12,8 @@ Description: The DuckDB project is an embedded analytical data management
     system with support for the Structured Query Language (SQL). This
     package includes C and ADBC bindings to duckdb.
 License: MIT + file LICENSE
-URL: https://duckdb.org/, https://github.com/duckdblabs/duckdbneo
-BugReports: https://github.com/duckdblabs/duckdbneo/issues
+URL: https://duckdb.org/, https://github.com/krlmlr/duckdbneo
+BugReports: https://github.com/krlmlr/duckdbneo/issues
 Depends:
     R (>= 4.0.0)
 Imports: 

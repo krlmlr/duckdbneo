@@ -12,7 +12,7 @@ You can install the development version of duckdbneo like so:
 
 ``` r
 # install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))
-pak::pak("duckdblabs/duckdbneo")
+pak::pak("krlmlr/duckdbneo")
 ```
 
 ## Goals
