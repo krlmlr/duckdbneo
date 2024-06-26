@@ -25,7 +25,7 @@ Suggests:
     DBItest,
     rlang,
     testthat (>= 3.0.0)
-Config/gha/filter: os != "windows-latest"
+Config/gha/filter: os != "windows-latest" & r != "devel"
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
