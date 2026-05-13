@@ -110,3 +110,4 @@ src/*.so
 /src/symbols.rds
 .Rproj.user
 docs
+.ccache/
